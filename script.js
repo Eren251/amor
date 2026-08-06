@@ -65,7 +65,7 @@ const frases=[
 
 "No hace falta que llueva para que te bañes 🤣",
 
-"Ya dale que sí, necio 🚿"
+"Ya dale que sí, necio "
 
 
 ];
