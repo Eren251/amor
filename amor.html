@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Una pregunta especial</title>
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#ffd6e7;
+    font-family:Arial;
+}
+
+#ventana{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+button{
+    margin:10px;
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#si{
+    background:#4CAF50;
+    color:white;
+}
+    
+#no{
+    background:#f44336;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div id="ventana">
+    <h2>💖 ¿Quieres ir al baile conmigo? 💖</h2>
+
+    <button id="si" onclick="alert('¡Qué felicidad! ❤️')">
+        Sí
+    </button>
+
+    <button id="no" onclick="alert('Lo intenté 😅')">
+        No
+    </button>
+</div>
+
+</body>
+</html>
