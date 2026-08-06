@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>Una pregunta especial</title>
-<style>
-body{
-    margin:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background:#ffd6e7;
-    font-family:Arial;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-#ventana{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,0,0,.2);
-    text-align:center;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-button{
-    margin:10px;
-    padding:12px 25px;
-    font-size:18px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-}
+    <title>Una pequeña sorpresa ❤️</title>
 
-#si{
-    background:#4CAF50;
-    color:white;
-}
-    
-#no{
-    background:#f44336;
-    color:white;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="ventana">
-    <h2>💖 ¿Quieres ir al baile conmigo? 💖</h2>
+    <!-- Corazones -->
+    <div id="hearts"></div>
 
-    <button id="si" onclick="alert('¡Qué felicidad! ❤️')">
-        Sí
-    </button>
+    <!-- Carta -->
+    <div id="card">
 
-    <button id="no" onclick="alert('Lo intenté 😅')">
-        No
-    </button>
-</div>
+        <h1>💌</h1>
+
+        <h2>Una pequeña pero muy importante pregunta</h2>
+
+        <button id="openButton">
+            Abrir carta
+        </button>
+
+    </div>
+
+    <!-- Mensaje oculto -->
+    <div id="message" class="hidden">
+
+        <h2 id="typing"></h2>
+
+        <div id="question" class="hidden">
+
+            <h1>
+                ¿Hoy te vas a bañar? 
+            </h1>
+
+            <div class="buttons">
+
+                <button id="yes">
+                    Sí 💚
+                </button>
+
+                <button id="no">
+                    No ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="success" class="hidden">
+
+        <h1>🎉</h1>
+
+        <h2>Sabia que dirías que sí ❤️</h2>
+
+        <p>
+            Que te quede bien limpio 🧼🥰
+        </p>
+
+    </div>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
